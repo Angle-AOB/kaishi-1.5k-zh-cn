@@ -9,8 +9,8 @@
 | 类型 | 仓库 | 版本 | 说明 |
 | --- | --- | --- | --- |
 | 上游 | [donkuri/Kaishi](https://github.com/donkuri/Kaishi) | v2.4.3 | 客观数据来源（音高重音、例句、配图、音频、词汇注释） |
-| zh-CN 老仓库 | [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn) | v1.4.0 | 早期中文本地化仓库，提供中文释义、词性、活用形的基础翻译 |
-| 本仓库 | [Angle-AOB/kaishi-1.5k-zh-cn](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn) | v1.5.0 起 | 从老仓库派生，接管后续 zh-CN 本地化迭代与上游同步 |
+| zh-CN 老仓库 | [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn) | v1.4.0 | 早期（v2.2.7）中文本地化仓库，提供中文释义、词性、活用形的基础翻译 |
+| 本仓库 | [Angle-AOB/kaishi-1.5k-zh-cn](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn) | v1.5.0 起 | 从老仓库派生，提供后续 zh-CN 本地化迭代与上游同步 |
 | 更新日志 | [CHANGELOG.md](./CHANGELOG.md) | — | 每次发布的详细变更（同步了哪些上游数据、翻译了哪些新增注释、升级路径等） |
 
 **双版本号约定：** CHANGELOG 里标题形如 `## v1.5.0（上游版本 v2.4.3）`——前者是 zh-CN 本地化版本，延续老仓库 v1.x 体系；后者是数据同步基线，与上游 v2.x 对齐。两条版本线并行，不合并、不同步。
@@ -243,7 +243,7 @@ b{color: #5586cd}
 
 比如 **次（つぎ）**、**あげる**、**上げる**、**動く** 这类词，常有学习者反馈音频"听起来像 ni / ani"。这不是音频错误，而是日语的**鼻浊音**现象——/g/ 音在词中或词尾时，母语者常发成带鼻音的 [ŋ]，听感接近 /n/。中文里没有这个音位对立，所以初学者容易忽略。
 
-推荐看这个视频理解鼻浊音：<https://www.youtube.com/watch?v=xpzpbuFHVVU>（YouTube，无字幕；也可搜"日本語 鼻濁音"找中文讲解）。
+推荐看这个视频理解鼻浊音：<https://www.youtube.com/watch?v=xpzpbuFHVVU>（YouTube；也可搜"日本語 鼻濁音"找中文讲解）。
 
 **遗憾的是，非鼻浊音版本的清晰音频通常并不存在**，因为这些词的自然发音就是鼻浊音。本仓库已在 `Notes` 或 `Pitch Accent Notes` 字段为相关词条补充了中文说明，并附上视频链接。
 
@@ -327,12 +327,12 @@ Kaishi 起源于 [TMW Discord 服务器](https://learnjapanese.moe/join/) 里 Ty
 
 ---
 
-## 刷完 Kaishi 之后做什么？
+## 学完 Kaishi 之后做什么？
 
-**开始挖矿（mining）**——从你实际阅读/观看的日语内容里提取生词做成 Anki 卡片。参考：
+**开始挖词（mining）**——从你实际阅读/观看的日语内容里提取生词做成 Anki 卡片。参考：
 
 - 上游指南：<https://donkuri.github.io/learn-japanese/guide/#consuming-native-content>
-- 常用挖矿笔记类型汇总：<https://github.com/donkuri/japanese-resources/?tab=readme-ov-file#mining>
+- 常用挖词笔记类型汇总：<https://github.com/donkuri/japanese-resources/?tab=readme-ov-file#mining>
 
 ---
 
