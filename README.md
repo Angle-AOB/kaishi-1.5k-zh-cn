@@ -29,6 +29,7 @@ Kaishi 1.5k 是一套为日语初学者设计的现代 Anki 卡组，收录约 1
 
 与常见的 Core 类卡组不同，Kaishi 背面优先显示振假名标注的读音，释义紧跟其下，然后是单词音频、例句音频、可选配图，最后是可选的音高重音与卡片专属注释。
 
+> [!TIP]
 > **日语新手请先阅读学习指南：** <https://donkuri.github.io/learn-japanese/guide/>（英文，可用浏览器翻译）。Kaishi 只是学习路径中的一环，不建议单独依赖。
 
 ### 目录
@@ -58,7 +59,7 @@ Kaishi 1.5k 是一套为日语初学者设计的现代 Anki 卡组，收录约 1
 
 - **本仓库（zh-CN 最新版）：** [Releases 页面](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn/releases) 下载 `Kaishi_15k_zh-CN_updated.apkg`
 - **老仓库（zh-CN v1.4.0）：** <https://github.com/maimemo/kaishi-zh-cn>
-- **上游（日文原版）：** [donkuri/Kaishi Releases](https://github.com/donkuri/Kaishi/releases/) 或 [AnkiWeb](https://ankiweb.net/shared/info/1196762551)
+- **上游（英文原版）：** [donkuri/Kaishi Releases](https://github.com/donkuri/Kaishi/releases/) 或 [AnkiWeb](https://ankiweb.net/shared/info/1196762551)
 
 **最低 Anki 版本：2.1.50+**（低于此版本可能因模板语法或字段变化而导入失败）。
 
@@ -81,6 +82,7 @@ Kaishi 1.5k 是一套为日语初学者设计的现代 Anki 卡组，收录约 1
 
 上游的音高重音数据（`Pitch Accent`）、例句（`Sentence`、`Sentence Furigana`）、图片（`Picture`）、音频（`Word Audio`、`Sentence Audio`）等客观字段与上游 v2.4.3 完全一致，未做本地化改写。
 
+> [!NOTE]
 > **注意：** 卡片模板（Front/Back/CSS）默认与上游一致，`Pos` 与 `Katsuyou` 字段虽然存在，但不会自动显示在卡片上。如需展示，请自行在 Back Template 里加入 `{{Pos}}`、`{{Katsuyou}}`。
 
 ---
@@ -197,6 +199,7 @@ Front Template 默认如下：
 
 ### 进阶：自制中→日反向卡片
 
+> [!WARNING]
 > **⚠️ 上游作者明确不推荐这样做，请先读完警告再决定。**
 >
 > 上游 issue [donkuri/Kaishi#155](https://github.com/donkuri/Kaishi/issues/155)（2026-07）里，社区用户 [JonnaMat](https://github.com/JonnaMat) 提交了完全对应的 “English → Japanese” Card Type 2 教程，本节模板代码即改编自该 issue。上游作者 donkuri 关闭该 issue 时的回复：
@@ -243,6 +246,7 @@ Front Template 默认如下：
 
 **直接沿用 Card 1 的 Back Template 即可**（含振假名、音高重音开关、Notes、Pos/Katsuyou 折叠等），无需重写。
 
+> [!TIP]
 > **提示：** 如果你在 Card 1 里启用了音高重音（删掉了 `<!--` `-->` 注释），Card 2 的 Back Template 也建议同步启用，保持体验一致。
 
 #### 兼容性说明
