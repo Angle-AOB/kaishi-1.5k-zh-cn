@@ -9,7 +9,7 @@
 | 类型 | 仓库 | 版本 | 说明 |
 | --- | --- | --- | --- |
 | 上游 | [donkuri/Kaishi](https://github.com/donkuri/Kaishi) | v2.4.3 | 客观数据来源（音高重音、例句、配图、音频、词汇注释） |
-| zh-CN 老仓库 | [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn) | v1.4.0（已停更） | 早期中文本地化仓库，提供中文释义、词性、活用形的基础翻译 |
+| zh-CN 老仓库 | [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn) | v1.4.0 | 早期中文本地化仓库，提供中文释义、词性、活用形的基础翻译 |
 | 本仓库 | [Angle-AOB/kaishi-1.5k-zh-cn](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn) | v1.5.0 起 | 从老仓库派生，接管后续 zh-CN 本地化迭代与上游同步 |
 | 更新日志 | [CHANGELOG.md](./CHANGELOG.md) | — | 每次发布的详细变更（同步了哪些上游数据、翻译了哪些新增注释、升级路径等） |
 
@@ -56,7 +56,7 @@ Kaishi 1.5k 是一套为日语初学者设计的现代 Anki 卡组，收录约 1
 ## 在哪里下载卡组？
 
 - **本仓库（zh-CN 最新版）：** [Releases 页面](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn/releases) 下载 `Kaishi_15k_zh-CN_updated.apkg`
-- **老仓库（zh-CN v1.4.0，已停更）：** <https://github.com/maimemo/kaishi-zh-cn>
+- **老仓库（zh-CN v1.4.0）：** <https://github.com/maimemo/kaishi-zh-cn>
 - **上游（日文原版）：** [donkuri/Kaishi Releases](https://github.com/donkuri/Kaishi/releases/) 或 [AnkiWeb](https://ankiweb.net/shared/info/1196762551)
 
 **最低 Anki 版本：2.1.50+**（低于此版本可能因模板语法或字段变化而导入失败）。
@@ -406,4 +406,3 @@ Kaishi 已被翻译成多种语言，如果你有其他语言需求，可以到�
 
 - **数据问题**（音高、例句、图片、音频、词汇注释）：请到 [上游 donkuri/Kaishi issues](https://github.com/donkuri/Kaishi/issues) 反馈，本仓库会跟随上游同步
 - **中文翻译问题**（释义、词性、活用形、注释翻译）：请到 [本仓库 issues](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn/issues) 反馈
-- **老仓库相关问题**：maimemo/kaishi-zh-cn 已停更，issue 可能不会被响应，建议直接在本仓库提出
