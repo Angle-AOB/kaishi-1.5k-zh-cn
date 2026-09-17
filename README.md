@@ -39,6 +39,7 @@ Kaishi 1.5k 是一套为日语初学者设计的现代 Anki 卡组，收录约 1
   - [音高重音](#音高重音)
   - [振假名](#振假名)
   - [切换卡片类型（词卡/句卡/音卡）](#切换卡片类型词卡句卡音卡)
+  - [进阶：自制中→日反向卡片](#进阶自制中日反向卡片)
   - [字体、字号与其他样式](#字体字号与其他样式)
   - [悬停/点击才显示振假名](#悬停点击才显示振假名)
 - [我不想让例句一直显示！](#我不想让例句一直显示)
@@ -193,6 +194,62 @@ Front Template 默认如下：
 - **只想看句卡：** 删掉 `{{Word}}`，或把整块替换为 `{{Sentence}}`
 - **只想看词卡：** 删掉 `<div style='font-size: 20px;'>{{Sentence}}</div>`
 - **只听音频：** 整块替换为 `{{Word Audio}}`、`{{Sentence Audio}}`，或两者都写
+
+### 进阶：自制中→日反向卡片
+
+> **⚠️ 上游作者明确不推荐这样做，请先读完警告再决定。**
+>
+> 上游 issue [donkuri/Kaishi#155](https://github.com/donkuri/Kaishi/issues/155)（2026-07）里，社区用户 [JonnaMat](https://github.com/JonnaMat) 提交了完全对应的 “English → Japanese” Card Type 2 教程，本节模板代码即改编自该 issue。上游作者 donkuri 关闭该 issue 时的回复：
+>
+> > *“I would highly recommend not doing this as translations are very much one-way streets. Starting from the English sentence, I often would translate it differently.”*
+> >
+> > 译：我强烈不建议这样做，因为翻译是单向的。从英文句子出发，我往往会翻译成不同的样子。
+>
+> **作者的顾虑：** L2 → L1 的映射不唯一。看到中文“我吃饭”回想日文时，你脑中可能是「ご飯を食べる」，也可能是「食事する」，也可能是「飯を食う」，但卡片只认一个答案，容易造成挫败或强化错误的对应关系。
+>
+> 如果你已经理解上述顾虑、仍希望为**特定**词汇启用反向卡（例如已熟悉词想练输出、易混词想强化辨析），继续往下看。
+
+#### 适用场景
+
+- ✅ 已经熟悉正向卡（日→中）、想练输出（写作/口语）
+- ✅ 想强化易混词的辨析（如「取る/撮る/採る」）
+- ❌ **不适合**：初学者、刚接触该词、只想快速刷识别量
+- ❌ **强烈不建议**：一次性给全部 1500 词启用（Anki 会弹 `This will create 1501 cards. Proceed?`，复习量瞬间翻倍，主线节奏被打乱）
+
+**推荐做法：** 批量添加 Card Type 2 后立刻全部 suspend，再按需 unsuspend 特定词（通过 tag、搜索结果或手动挑选）。
+
+#### 添加步骤
+
+1. Anki 主界面 → **浏览** → 左侧选中 Kaishi 卡组 → 随便点一张卡
+2. 右上角点 **卡片…** → 卡片类型下拉框右边点 **选项 → 添加卡片类型…**
+3. 弹窗提示 `This will create 1501 cards. Proceed?` → 确认
+4. 新卡片类型默认名 “Card 2”，建议改为 “反向卡（中→日）” 便于识别
+5. 粘贴下面的 Front / Back Template，保存
+6. 立刻到 **浏览** 搜 `"反向卡（中→日）"`（或 `"Card 2"`），`Ctrl + A` 全选 → 右键 **切换挂起**，先把 1501 张新卡全部挂起
+7. 之后按需 unsuspend 想练的词（如 `word:取る`、`tag:reverse`、`is:due` 等搜索条件）
+
+#### Front Template（正面 = 中文）
+
+只放中文，不放振假名/日文/音频——反向卡的目的就是强迫从中文回想日文：
+
+```html
+<div lang="zh-CN">
+<div class="cn-font" style='font-size: 30px;'>{{Word Meaning}}</div>
+<div class="cn-font" style='font-size: 22px; padding-top: 16px;'>{{Sentence Meaning}}</div>
+</div>
+```
+
+#### Back Template（背面 = 日文 + 完整反馈）
+
+**直接沿用 Card 1 的 Back Template 即可**（含振假名、音高重音开关、Notes、Pos/Katsuyou 折叠等），无需重写。
+
+> **提示：** 如果你在 Card 1 里启用了音高重音（删掉了 `<!--` `-->` 注释），Card 2 的 Back Template 也建议同步启用，保持体验一致。
+
+#### 兼容性说明
+
+- 本节操作完全在你本地 Anki 里进行，**不修改**本仓库分发的 apkg 文件
+- 日后导入新版 apkg（例如未来的 v1.6.0）时，Anki 通常会保留你自定义的 Card Type 2；若发现模板或样式被覆盖，按本节步骤重新添加即可
+- **导入新版时若不希望模板被覆盖**，可在导入对话框取消勾选 **始终更新笔记模板**——但这样也无法获取上游对 Card 1 的最新修复，需权衡
 
 ### 字体、字号与其他样式
 
