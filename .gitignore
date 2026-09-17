@@ -1,0 +1,95 @@
+# ============================================================
+# Anki 卡组二进制产物
+# 单个 apkg 均超过 GitHub 100 MB 单文件硬限制，
+# 通过 GitHub Releases 分发（与上游 donkuri/Kaishi 一致）
+# ============================================================
+*.apkg
+*.apkg.old
+*.apkg.tmp
+*.colpkg
+*.apkg.bak
+
+# ============================================================
+# _inspect/ 分析中间产物
+# 保留 *.py 与 *.ps1 脚本作为方法学记录，
+# 排除 zip 备份与解压出的媒体文件（合计 > 320 MB / 12000+ 文件）
+# ============================================================
+_inspect/*.zip
+_inspect/updated/
+_inspect/upstream/
+_inspect/zhcn/
+_inspect/_verify/
+_inspect/**/*.anki2
+_inspect/**/*.anki21
+
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ============================================================
+# Windows / PowerShell
+# ============================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ============================================================
+# macOS / Linux
+# ============================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+*~
+.fuse_hidden*
+.Trash-*
+
+# ============================================================
+# 编辑器 / IDE
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.qoder/
+
+# ============================================================
+# 日志与临时文件
+# ============================================================
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
