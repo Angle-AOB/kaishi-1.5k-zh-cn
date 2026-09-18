@@ -4,6 +4,9 @@
 
 面向中文母语者的日语入门 Anki 卡组，本地化自上游 [donkuri/Kaishi](https://github.com/donkuri/Kaishi)。当前数据基线 **v2.4.3**，zh-CN 本地化版本 **v1.3.0.1**。
 
+> [!NOTE]
+> **关于本页结构：** 从页首到「zh-CN 版本比上游多了什么」为止，是 zh-CN 本地化说明，**非上游原版 README 内容**；自下方「以下是英文原版牌组的 README.md 的翻译」起，是对上游 [UPSTREAM_README.md](./UPSTREAM_README.md) 的忠实翻译。翻译正文中凡标注 **⚠️ 非上游原版内容** 的部分，同为 zh-CN 本地化补充。
+
 ## 项目关系
 
 | 类型        | 仓库                                                                            | 版本         | 说明                                   |
@@ -14,58 +17,6 @@
 | 更新日志      | [CHANGELOG.md](./CHANGELOG.md)                                                | —          | 每次发布的详细变更（同步了哪些上游数据、翻译了哪些新增注释、升级路径等） |
 
 **双版本号约定：** CHANGELOG 里标题形如 ` v1.3.0.1（上游版本 v2.4.3）`——前者是 zh-CN 本地化版本，延续老仓库 v1.x 体系；后者是数据同步基线，与上游 v2.x 对齐。两条版本线并行，不合并、不同步。
-
----
-
-## 卡组简介
-
-Kaishi 1.5k 是一套为日语初学者设计的现代 Anki 卡组，收录约 1500 个高频基础词汇。卡组高度模块化，本页说明可以按需自定义的各种选项。卡组正面如下：
-
-<img src="https://github.com/donkuri/Kaishi/blob/main/pics/kaishi-front.png" alt="Kaishi 1.5k 卡片正面" style="width: 100%; height: auto">
-
-正面同时显示单词与例句，但例句里的目标单词会被高亮加粗，方便一眼锁定重点；等单词熟悉之后，因为单词先出现，复习速度会显著变快。卡组背面如下：
-
-<img src="https://github.com/donkuri/Kaishi/blob/main/pics/kaishi-back.png" alt="Kaishi 1.5k 卡片背面" style="width: 100%; height: auto">
-
-与常见的 Core 类卡组不同，Kaishi 背面优先显示振假名标注的读音，释义紧跟其下，然后是单词音频、例句音频、可选配图，最后是可选的音高重音与卡片专属注释。
-
-> [!TIP]
-> **日语新手请先阅读学习指南：** <https://donkuri.github.io/learn-japanese/guide/>（英文，可用浏览器翻译）。Kaishi 只是学习路径中的一环，不建议单独依赖。
-
-### 目录
-
-- [在哪里下载卡组？](#在哪里下载卡组)
-- [zh-CN 版本比上游多了什么？](#zh-cn-版本比上游多了什么)
-- [卡组有哪些可自定义选项？](#卡组有哪些可自定义选项)
-  - [音高重音](#音高重音)
-  - [振假名](#振假名)
-  - [切换卡片类型（词卡/句卡/音卡）](#切换卡片类型词卡句卡音卡)
-  - [进阶：自制中→日反向卡片](#进阶自制中日反向卡片)
-  - [字体、字号与其他样式](#字体字号与其他样式)
-  - [悬停/点击才显示振假名](#悬停点击才显示振假名)
-- [我不想让例句一直显示！](#我不想让例句一直显示)
-- [某个词的音频听起来不对！](#某个词的音频听起来不对)
-- [如何把 Kaishi 覆盖导入到已有卡组？](#如何把-kaishi-覆盖导入到已有卡组)
-- [我不喜欢配图！](#我不喜欢配图)
-- [卡组的由来](#卡组的由来)
-- [学完 Kaishi 之后做什么？](#学完-kaishi-之后做什么)
-- [其他语言的翻译版本](#其他语言的翻译版本)
-- [从老版本 zh-CN 升级到本仓库版本](#从老版本-zh-cn-升级到本仓库版本)
-- [致谢](#致谢)
-
----
-
-## 在哪里下载卡组？
-
-- **本仓库（zh-CN 最新版）：** [Releases 页面](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn/releases) 下载 `Kaishi_15k_zh-CN_updated.apkg`
-- **老仓库（zh-CN v1.3.0）：** <https://github.com/maimemo/kaishi-zh-cn>
-- **上游（英文原版）：** [donkuri/Kaishi Releases](https://github.com/donkuri/Kaishi/releases/) 或 [AnkiWeb](https://ankiweb.net/shared/info/1196762551)
-
-**最低 Anki 版本：2.1.50+**（低于此版本可能因模板语法或字段变化而导入失败）。
-
-导入方法：Anki → **文件 → 导入** → 选择 `.apkg`。若之前已经装过老版本 zh-CN，请参考本文末尾的[升级章节](#从老版本-zh-cn-升级到本仓库版本)。
-
----
 
 ## zh-CN 版本比上游多了什么？
 
@@ -87,15 +38,73 @@ Kaishi 1.5k 是一套为日语初学者设计的现代 Anki 卡组，收录约 1
 
 ---
 
-## 卡组有哪些可自定义选项？
+以下是英文原版牌组的 README.md 的翻译：
 
-修改方法：在 Anki 主界面选中 Kaishi 卡组 → 点击 **浏览** → 任选一张卡片 → 右上角点击 **卡片…**。
+---
+
+**凡本页未提及的其他牌组，均与本人无任何关联，包括任何 AI 生成或付费修改的版本。**
+
+# Kaishi 1.5k
+
+欢迎访问 **Kaishi 1.5k** 的公开代码仓库。这是一款现代化的 Anki 牌组，旨在帮助初学者入门基础日语词汇。Kaishi 1.5k 采用高度模块化设计，本页面将为你详细介绍各种自定义选项，让你可以随心所欲地调整牌组。牌组正面效果如下：
+
+<img src="https://github.com/donkuri/Kaishi/blob/main/pics/kaishi-front.png" alt="Kaishi 1.5k 卡片正面" style="width: 100%; height: auto">
+
+如你所见，卡片正面同时显示单词和例句，并且单词在句子中被高亮显示，方便你迅速抓住核心信息。当你对单词足够熟悉后，复习效率会更高，因为单词总会最先映入眼帘。默认牌组的背面如下：
+
+<img src="https://github.com/donkuri/Kaishi/blob/main/pics/kaishi-back.png" alt="Kaishi 1.5k 卡片背面" style="width: 100%; height: auto">
+
+与大多数「核心词汇」（Core）类牌组不同，本牌组的振假名（furigana）直接标注了单词读音，其正下方就是词义。接着，你还可以收听单词和例句的音频。如果你需要，也可以添加音高重音（详见下文）。如果某张卡片有相关笔记，笔记会显示在最下方。
+
+[如果你是日语初学者或刚接触沉浸式学习法，请先阅读本指南。](https://donkuri.github.io/learn-japanese/guide/)
+
+### 目录
+
+- [我在哪里获取牌组？](#我在哪里获取牌组)
+- [如何使用本牌组？](#如何使用本牌组)
+- [其他相关牌组](#其他相关牌组)
+- [牌组有哪些自定义选项？](#牌组有哪些自定义选项)
+  - [音高重音](#音高重音)
+  - [其他次要选项](#其他次要选项)
+  - [进阶：自制中→日反向卡片（zh-CN 补充）](#进阶自制中日反向卡片zh-cn-补充)
+- [我不想让例句一直显示！](#我不想让例句一直显示)
+- [某个词的音频听起来不对！](#某个词的音频听起来不对)
+- [如何将 Kaishi 导入到现有牌组之上？](#如何将-kaishi-导入到现有牌组之上)
+- [我不喜欢这些图片！](#我不喜欢这些图片)
+- [牌组的诞生故事](#牌组的诞生故事)
+- [学完本牌组后该做什么？](#学完本牌组后该做什么)
+- [牌组的多语言翻译](#牌组的多语言翻译)
+- [从老版本 zh-CN 升级到本仓库版本（zh-CN 补充）](#从老版本-zh-cn-升级到本仓库版本zh-cn-补充)
+- [致谢](#致谢)
+- [反馈与贡献（zh-CN 补充）](#反馈与贡献zh-cn-补充)
+
+## 我在哪里获取牌组？
+
+你可以在本 GitHub 项目的 [releases](https://github.com/donkuri/Kaishi/releases/) 页面下载，或者在 [AnkiWeb](https://ankiweb.net/shared/info/1196762551) 上获取（前提是牌组未处于审核状态）。**本牌组支持 Anki 2.1.50 及以上版本。**
+
+> [!NOTE]
+> **⚠️ 非上游原版内容（zh-CN 下载渠道）：**
+> 
+> - **本仓库（zh-CN 最新版）：** [Releases 页面](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn/releases) 下载 `Kaishi_15k_zh-CN_updated.apkg`
+> - **老仓库（zh-CN v1.3.0）：** <https://github.com/maimemo/kaishi-zh-cn>
+> 
+> 导入方法：Anki → **文件 → 导入** → 选择 `.apkg`。若之前已经装过老版本 zh-CN，请参考本文末尾的[升级章节](#从老版本-zh-cn-升级到本仓库版本zh-cn-补充)。
+
+## 如何使用本牌组？
+
+若想了解 Kaishi 如何融入更宏观的日语学习计划，请参阅[这份指南](https://donkuri.github.io/learn-japanese/guide/)。
+
+## 其他相关牌组
+
+ねむい 基于 Kaishi 1.5k 制作了一款部首牌组。它将 Kaishi 1.5k 中出现的每一个汉字部首，都与牌组中首个包含该部首的单词关联起来，同时还额外收录了一些 Kaishi 本身未包含的部首。**如果你觉得汉字很难，可以将这款部首牌组与 Kaishi 配合使用**，因为它会随着你的学习进度同步介绍汉字部首，助你更高效地拆解汉字。你可以在 [AnkiWeb 上找到它](https://ankiweb.net/shared/info/1722008986)。非常感谢 ねむい！
+
+## 牌组有哪些自定义选项？
+
+你可以通过多种选项来修改卡片。操作方法是：选中 Kaishi 牌组，点击「浏览」（Browse），在牌组中任选一张卡片，然后点击右上角的「卡片…」（Cards...）按钮。
 
 ### 音高重音
 
-要不要学音高重音，是日语学习社区里长期争论的话题。Kaishi 采取折中方案：**数据已经准备好了，是否显示由你决定**；即便现在关闭，将来想开启也随时可以。
-
-Back Template 里默认把音高重音相关部分用 HTML 注释包起来了：
+最重要的选项莫过于是否在卡片上显示音高重音。目前，关于是否应该学习音高重音，社区里时常有非常激烈的争论。我们选择了一种折衷方案：我们为你提供了音高重音数据，但用不用由你决定。即使你现在选择不用，以后也随时可以开启。开启方法很简单，下面是牌组的「背面模板」（Back Template）代码（点击「搜索」栏上方的小圆点切换）：
 
 ```html
 <div lang="ja">
@@ -138,7 +147,7 @@ Back Template 里默认把音高重音相关部分用 HTML 注释包起来了：
 </div>
 ```
 
-**启用音高重音：** 删掉 `<!--` 与 `-->`（两处注释块都删），保存即可：
+要启用音高重音，你只需移除所有代表注释的 `<!--` 和 `-->` 符号即可，就像这样：
 
 ```html
 <div lang="ja">
@@ -173,18 +182,19 @@ Back Template 里默认把音高重音相关部分用 HTML 注释包起来了：
 </div>
 ```
 
-**音高记号规则说明：** 详见上游 issue [donkuri/Kaishi#104](https://github.com/donkuri/Kaishi/issues/104#issuecomment-3171889366)（英文）。
+**想了解音高重音的标记方法，请参阅[这个 issue](https://github.com/donkuri/Kaishi/issues/104#issuecomment-3171889366)。**
 
-### 振假名
+### 其他次要选项
 
-想去掉振假名？把 Back Template 里所有 `furigana:` 前缀删掉即可，例如：
+你还可以调整一些次要选项。
 
-- `{{furigana:Word Furigana}}` → `{{Word Furigana}}`
-- `{{furigana:Sentence Furigana}}` → `{{Sentence Furigana}}`
+#### 振假名
 
-### 切换卡片类型（词卡/句卡/音卡）
+如果你想移除振假名，只需删除背面模板中的 `furigana:` 部分即可。
 
-Front Template 默认如下：
+#### 其他卡片选项
+
+你也可以随心所欲地改变想要看到的卡片类型。这是 Kaishi 1.5k 的「正面模板」（Front Template）：
 
 ```html
 <div lang="ja">
@@ -193,11 +203,42 @@ Front Template 默认如下：
 </div>
 ```
 
-- **只想看句卡：** 删掉 `{{Word}}`，或把整块替换为 `{{Sentence}}`
-- **只想看词卡：** 删掉 `<div style='font-size: 20px;'>{{Sentence}}</div>`
-- **只听音频：** 整块替换为 `{{Word Audio}}`、`{{Sentence Audio}}`，或两者都写
+如你所见，默认只显示单词和例句。如果你想要**句子**卡片，只需删除 `{{Word}}` 部分，或者用 `{{Sentence}}` 替换它并删除其余部分。如果你想要**单词**卡片，只需删除 `<div style='font-size: 20px;'>{{Sentence}}</div>` 部分。如果你想要**音频**卡片，就删掉所有内容，然后添加 `{{Word Audio}}`、`{{Sentence Audio}}`，或两者皆加。
 
-### 进阶：自制中→日反向卡片
+#### 更改字体、字号或其他样式选项
+
+这是 Kaishi 1.5k 的「样式」（Styling）模板：
+
+```css
+.card {
+ font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Noto Sans JP", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "MS UI Gothic", sans-serif;
+ font-size: 44px;
+ text-align: center;
+}
+
+img {
+max-width: 300px;
+max-height: 250px;
+}
+
+.mobile img {
+max-width: 50vw;
+}
+
+/* This part defines the bold color. */
+b{color: #5586cd}
+```
+
+你可以在[这里](https://docs.ankiweb.net/templates/styling.html)找到各种样式选项。可以看到，Kaishi 1.5k 直接在样式标签页里用的选项很少。你可以修改 `font-family` 来更换字体，`font-size` 来调整字号，`text-align` 来改变文本对齐方式（比如设为左对齐）。默认情况下，Kaishi 1.5k 会给**粗体**文字上色。修改颜色的选项是 `b{color: }`。只需填入一个十六进制颜色代码或颜色名（如 `red`）即可。如果你不想要任何颜色，删掉整行 `b{color: }` 即可。
+
+#### 悬停/点击时显示振假名
+
+可以按照[这个讨论帖](https://github.com/donkuri/kaishi/issues/154)里的方法实现。
+
+### 进阶：自制中→日反向卡片（zh-CN 补充）
+
+> [!NOTE]
+> **⚠️ 非上游原版内容：** 本节为 zh-CN 本地化补充，上游原版 README 无此章节。
 
 > [!WARNING]
 > **⚠️ 上游作者明确不推荐这样做，请先读完警告再决定。**
@@ -252,87 +293,36 @@ Front Template 默认如下：
 #### 兼容性说明
 
 - 本节操作完全在你本地 Anki 里进行，**不修改**本仓库分发的 apkg 文件
-- 日后导入新版 apkg（例如未来的 v1.6.0）时，Anki 通常会保留你自定义的 Card Type 2；若发现模板或样式被覆盖，按本节步骤重新添加即可
+- 日后导入新版 apkg（例如未来的 v1.4.0）时，Anki 通常会保留你自定义的 Card Type 2；若发现模板或样式被覆盖，按本节步骤重新添加即可
 - **导入新版时若不希望模板被覆盖**，可在导入对话框取消勾选 **始终更新笔记模板**——但这样也无法获取上游对 Card 1 的最新修复，需权衡
-
-### 字体、字号与其他样式
-
-Styling 模板默认：
-
-```css
-.card {
- font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Noto Sans JP", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "MS UI Gothic", sans-serif;
- font-size: 44px;
- text-align: center;
-}
-
-img {
-max-width: 300px;
-max-height: 250px;
-}
-
-.mobile img {
-max-width: 50vw;
-}
-
-/* This part defines the bold color. */
-b{color: #5586cd}
-```
-
-常见调整：
-
-- `font-family` 换字体（Windows 用户可加 `"Microsoft YaHei"`、`"Yu Gothic"` 等）
-- `font-size` 改字号
-- `text-align` 改对齐（`left` 左对齐、`center` 居中）
-- `b{color: #5586cd}` 改例句里高亮单词的颜色，替换成任意十六进制色号或颜色名（如 `red`）；不想高亮就整块删掉
-
-更多 CSS 选项参考 Anki 官方文档：<https://docs.ankiweb.net/templates/styling.html>
-
-### 悬停/点击才显示振假名
-
-见上游 issue [donkuri/kaishi#154](https://github.com/donkuri/kaishi/issues/154)（英文）。
-
----
 
 ## 我不想让例句一直显示！
 
-有人担心一直看着例句，最后记住的是整句而不是单词——这个顾虑是合理的。Kaishi 保留例句是因为**词义永远在具体语境里才有意义**。如果你确实想遮挡例句，可以按照上游 issue [donkuri/kaishi#131](https://github.com/donkuri/kaishi/issues/131#issuecomment-3968847411) 里的方案改 Front Template 和 Styling，让例句变成模糊状态，鼠标悬停或点击才清晰显示。感谢 [Hit2Skill](https://github.com/Hit2Skill) 提供的思路。
-
----
+有些人不希望例句一直显示在正面。这个想法完全合理，因为有些人最后只记住了整句。这里保留例句，是为了给你提供语境，毕竟词义永远在具体语境里才有意义。如果你愿意，可以按照[这个 issue 里的评论](https://github.com/donkuri/kaishi/issues/131#issuecomment-3968847411)修改你的正面模板和样式模板，把例句变成模糊状态。感谢 [Hit2Skill](https://github.com/Hit2Skill) 提供的思路！
 
 ## 某个词的音频听起来不对！
 
-比如 **次（つぎ）**、**あげる**、**上げる**、**動く** 这类词，常有学习者反馈音频"听起来像 ni / ani"。这不是音频错误，而是日语的**鼻浊音**现象——/g/ 音在词中或词尾时，母语者常发成带鼻音的 [ŋ]，听感接近 /n/。中文里没有这个音位对立，所以初学者容易忽略。
+某些词，比如 **次（つぎ）** 和 **あげる**，被反馈音频“不对”。这是因为初学者往往听不出（也没有意识到）日语的**鼻浊音**现象——/g/ 音听起来会更接近 /n/。关于其原理，请看[这个视频](https://www.youtube.com/watch?v=xpzpbuFHVVU)的解释。**遗憾的是，这些词的非鼻浊音版本（即所谓“更好”的音频）通常并不存在。**
 
-推荐看这个视频理解鼻浊音：<https://www.youtube.com/watch?v=xpzpbuFHVVU>（YouTube；也可搜"日本語 鼻濁音"找中文讲解）。
+## 如何将 Kaishi 导入到现有牌组之上？
 
-**遗憾的是，非鼻浊音版本的清晰音频通常并不存在**，因为这些词的自然发音就是鼻浊音。本仓库已在 `Notes` 或 `Pitch Accent Notes` 字段为相关词条补充了中文说明，并附上视频链接。
+如果你已经开始学习 Core2k 或 Tango N4-N5（或其他类似牌组），又想转而使用 Kaishi 1.5k，可以参考 [Kuuube](https://github.com/Kuuuube) 编写的以下步骤。
 
----
+1. 使用 .apkg 文件正常导入 Kaishi 牌组。
+2. 前往「文件 > 导出…」（File > Export...），选择「笔记（纯文本格式 .txt）」（Notes in Plain Text (.txt)）来导出 Kaishi 牌组，其他设置保持默认。
+3. 删除刚刚导入的 Kaishi 牌组。
+4. 选中你想并入 Kaishi 的目标牌组，点击「浏览」（Browse），任选一张卡片，按 `ctrl + a` 全选，然后点击左上角菜单的「笔记 > 更改笔记类型…」（Notes > Change Note Type...）。请确保你选中的所有笔记都属于同一种笔记类型，否则该选项可能不会出现。
+5. 将笔记类型更改为 `Kaishi 1.5k`。确保「新」（New）列的「Word」字段对应的是你原牌组中表示单词的字段。如果你不打算删除原牌组中任何 Kaishi 未包含的卡片，请确保其他字段也正确对应。否则，直接使用默认设置并点击「保存」（Save）。
+6. 导入在第 2 步中导出的 Kaishi .txt 文件。
+7. 导入时，确保「笔记类型」设置为 `Kaishi 1.5k`，「牌组」设置为你的目标牌组。如果你打算删除所有非 Kaishi 的卡片，请在「为所有笔记添加标签」（Tag all notes）选项中填入 `Kaishi`。
+8. 点击「导入」（Import）。
+9. 要删除非 Kaishi 的卡片，请选中你的牌组，点击「浏览」（Browse），在左侧菜单中选中该牌组，然后在搜索框末尾追加 ` -tag:Kaishi`，接着任选一张卡片，按 `ctrl + a` 全选，最后从左上角菜单进入「笔记 > 删除」（Notes > Delete）。
 
-## 如何把 Kaishi 覆盖导入到已有卡组？
+**如果你要导入的目标是 Core 2.3k，请参考[这个链接](https://github.com/Manhhao/anki.transfer-review-history)。**
 
-如果你已经开始刷 Core 2k、Tango N4-N5 或类似卡组，想切换到 Kaishi 1.5k，同时**保留原有学习进度**，可以按照 [Kuuube](https://github.com/Kuuuube) 提供的步骤操作（下面从上游 README 翻译）：
+## 我不喜欢这些图片！
 
-1. 正常导入 Kaishi `.apkg`
-2. **文件 → 导出**，把 Kaishi 卡组导出为 `Notes in Plain Text (.txt)`，其它设置保持默认
-3. 删除刚导入的 Kaishi 卡组
-4. 选中你**想被覆盖的卡组**，点击 **浏览**，随便点一张卡，`Ctrl + A` 全选，然后左上角菜单 **笔记 → 更改笔记类型**。确保选中的所有笔记都属于同一个笔记类型，否则该菜单项可能不显示
-5. 改成 `Kaishi 1.5k` 笔记类型，确认 **New** 列的 `Word` 字段对应你原卡组里存单词的字段；如果你不打算删除原卡组里 Kaishi 不包含的卡片，其他字段也要一一对齐；否则用默认映射即可，点 **保存**
-6. 导入第 2 步导出的 Kaishi `.txt`
-7. 导入时把 **笔记类型** 设为 `Kaishi 1.5k`、**卡组** 设为要被覆盖的那个卡组；如果打算删除 Kaishi 不包含的旧卡片，在 **给所有笔记加标签** 里填 `Kaishi`
-8. 点击 **导入**
-9. 要删除 Kaishi 不包含的旧卡片：选中卡组 → **浏览** → 左侧选中该卡组 → 搜索栏追加 ` -tag:Kaishi` → 任选一张卡 → `Ctrl + A` → 左上角 **笔记 → 删除**
-
-**若要覆盖导入到 Core 2.3k，另需参考 [anki.transfer-review-history](https://github.com/Manhhao/anki.transfer-review-history) 迁移复习历史。**
-
----
-
-## 我不喜欢配图！
-
-理解。给 1500 个词找一致且可自由使用的图片本身就是巨大挑战（这部分主要由上游的 [liarbeast](https://github.com/liarbeast) 完成），所以确实有些图片与词义或例句对不太上。
-
-要去掉图片：在 **浏览** 里选任意 Kaishi 卡片 → 右上角 **卡片…** → 选 **Back Template** → 找到 `{{Picture}}` 删掉即可。或者干脆用下面这段完整替换 Back Template（同时保留音高重音注释开关）：
+完全可以理解。为这个牌组寻找 1500 张风格统一且可免费使用的图片是一项巨大的挑战（再次感谢 [liarbeast](https://github.com/liarbeast) 的付出！）。因此，许多图片与单词或例句的意境并非完美契合。这是个中肯的批评。如果你想移除图片，可以这样做：在浏览器中点击任意一张 Kaishi 卡片后打开「卡片…」编辑界面，找到「背面」（Back）模板，然后将里面的 `{{Picture}}` 字段删除即可。或者，你也可以直接用以下代码替换整个模板：
 
 ```html
 <div lang="ja">
@@ -374,49 +364,29 @@ b{color: #5586cd}
 </div>
 ```
 
----
+## 牌组的诞生故事
 
-## 卡组的由来
+本牌组的诞生，源于我和 Tyogin 在 [TMW discord 服务器](https://learnjapanese.moe/join/) 上的一次讨论。我们都对当时流行的几款初学者牌组中那些恼人的缺陷感到惋惜。由于种种问题，许多初学者在使用 Core 2k 和 Tango 时常常感到困惑。Tango 牌组中包含一些生僻词，比如「ナンプラー」（一种泰国鱼露），而且很多人对牌组中充斥着大量基础短语和国家名并不感兴趣。此外，它的字段格式设计得极差，导致用户几乎无法以其预设的「句子卡片」之外的任何方式使用。而 Core 2k 虽然是模块化的，却存在不少翻译错误、图片缺失或不相关的问题，有些例句也并不实用，甚至无法准确反映所用单词的含义。
 
-以下内容译自上游 README，简略版本：
+这些问题都非常恼人，以至于差不多每两周就有新手向我们提问。于是 Tyogin 提议，不如我们自己动手解决这些问题吧。一个小型团队就此成立。我们主要整合了来自 Core2k、Core10k、Tango N4 和 Tango N5 的数据，然后使用多种 Yomichan/Yomitan 词频词典对单词进行排序，并从中挑选了约 1500 个词。接着，我们修正了每个单词的翻译，为其挑选了最合适的例句，并对需要修改的例句进行了调整（在挑选的 1500 个例句中，我们修正了大约 120 个）。随后，我们从 [AJT Japanese](https://ankiweb.net/shared/info/1344485230) 为那些缺少合适音频的单词获取了音高重音数据和单词音频，并由 Karifurai 和 cindsa 两人团队对音高重音数据进行了核对，还为有需要的单词添加了音高重音笔记。我们还裁剪了音频中的静音部分，并统一了各音频文件之间的音量。此外，我们同样利用 AJT Japanese 为单词和例句生成了振假名。在此之后，我们设计了一套简洁的、以提示为目标的句子卡片 CSS 样式，用于牌组的默认版本。最后，多位成员对牌组进行了校对，以确保错误降到最低。
 
-Kaishi 起源于 [TMW Discord 服务器](https://learnjapanese.moe/join/) 里 Tyogin 与上游作者 [栗（donkuri）](https://github.com/donkuri/) 的一次讨论。当时主流的初学者卡组（Core 2k、Tango N4-N5）都存在明显问题：Tango 收录了如 ナンプラー（泰式鱼露）这类生僻词，还塞了大量基础短语和国名，字段设计僵硬、只能做句卡；Core 2k 虽然模块化，但存在误译、图片缺失或与词义无关，例句质量也不稳定，甚至有时反映不出词义。
+Kaishi，写作「開始」，意为「开始、开端」。我们觉得这个名字非常贴切，便定了下来。希望这个牌组能为你的日语学习之旅开启一个美妙的篇章。
 
-于是他们组建了一个小团队，从 Core 2k、Core 10k、Tango N4、Tango N5 抽取数据，用多个 Yomichan/Yomitan 词频字典重排，选出约 1500 个词。之后逐个校对释义、为每个词挑选最佳例句（其中约 120 条例句需要修复），补充音高重音数据，从 [AJT Japanese](https://ankiweb.net/shared/info/1344485230) 补齐缺失音频，由 karifurai 与 cindsa 两人分工核验前后 750 张卡的音高数据并补充注释。音频经过静音裁剪与响度归一化，振假名也由 AJT Japanese 生成。最后由多人校对通读。
+## 学完本牌组后该做什么？
 
-「開始（かいし）」在日语里意为"开始、开端"——希望这套卡组能成为你日语学习旅程的美好起点。
+如果你还没开始，现在就去[开始挖掘（mining）](https://donkuri.github.io/learn-japanese/guide/#consuming-native-content)吧。关于可用的挖掘笔记类型列表，请参阅[这里](https://github.com/donkuri/japanese-resources/?tab=readme-ov-file#mining)。
 
----
+## 牌组的多语言翻译
 
-## 学完 Kaishi 之后做什么？
+如果你有兴趣将本牌组翻译成你的母语，请在 [GitHub 的 issue 追踪器](https://github.com/donkuri/Kaishi/issues)上提出。本牌组已被翻译成 **[俄语](https://github.com/NeonGooRoo/KaishiRu)**、**[印尼语](https://ankiweb.net/shared/info/1512066033)**、**[越南语](https://github.com/duy103zxc/kaishi-vi/releases)**、**[乌克兰语](https://github.com/maksiksq/KaishiUa)**、**[巴西葡萄牙语](https://github.com/nonsolvent/Kaishi-pt-BR)**、**[西班牙语](https://github.com/Dogi5/Kaishi-ESP)**、**[中文](https://github.com/maimemo/kaishi-zh-cn/)**、**[法语](https://github.com/khmskhmskhms/kaishi-FR)**、**[阿拉伯语](https://github.com/kaihouguide/kaishi-arabic)** 和 **[德语](https://github.com/Yukitoki97900/Kaishi-1.5K-German-Version)**。
 
-**开始挖词（mining）**——从你实际阅读/观看的日语内容里提取生词做成 Anki 卡片。参考：
+> [!NOTE]
+> **⚠️ 非上游原版内容：** 上游列出的「中文」链接指向老仓库 [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn)。本仓库是[Angle-AOB/kaishi-1.5k-zh-cn](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn) 。
 
-- 上游指南：<https://donkuri.github.io/learn-japanese/guide/#consuming-native-content>
-- 常用挖词笔记类型汇总：<https://github.com/donkuri/japanese-resources/?tab=readme-ov-file#mining>
+## 从老版本 zh-CN 升级到本仓库版本（zh-CN 补充）
 
----
-
-## 其他语言的翻译版本
-
-Kaishi 已被翻译成多种语言，如果你有其他语言需求，可以到对应仓库查看：
-
-- **俄语**：<https://github.com/NeonGooRoo/KaishiRu>
-- **印尼语**：<https://ankiweb.net/shared/info/1512066033>
-- **越南语**：<https://github.com/duy103zxc/kaishi-vi/releases>
-- **乌克兰语**：<https://github.com/maksiksq/KaishiUa>
-- **巴西葡萄牙语**：<https://github.com/nonsolvent/Kaishi-pt-BR>
-- **西班牙语**：<https://github.com/Dogi5/Kaishi-ESP>
-- **中文（本仓库）**：<https://github.com/Angle-AOB/kaishi-1.5k-zh-cn>（继承自 [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn)）
-- **法语**：<https://github.com/khmskhmskhms/kaishi-FR>
-- **阿拉伯语**：<https://github.com/kaihouguide/kaishi-arabic>
-- **德语**：<https://github.com/Yukitoki97900/Kaishi-1.5K-German-Version>
-
-有意翻译到其他语言？请到 [上游 issue tracker](https://github.com/donkuri/Kaishi/issues) 开设新 issue。
-
----
-
-## 从老版本 zh-CN 升级到本仓库版本
+> [!NOTE]
+> **⚠️ 非上游原版内容：** 本节为 zh-CN 本地化补充，上游原版 README 无此章节。
 
 如果你之前用的是老仓库 [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn)（v1.3.0，对应上游 v2.2.7 数据），想升级到本仓库 v1.3.0.1（对应上游 v2.4.3）：
 
@@ -431,39 +401,52 @@ Kaishi 已被翻译成多种语言，如果你有其他语言需求，可以到�
 
 详细变更清单（哪些词的音高改了、哪些例句改了、哪些新增了注释）见 [CHANGELOG.md](./CHANGELOG.md)。
 
----
-
 ## 致谢
 
-### 上游 Kaishi 1.5k 团队
+本牌组的制作离不开以下成员的帮助：
 
-- **[栗（donkuri）](https://github.com/donkuri/)** — 主要架构师，负责所有技术方面、翻译与校对
-- **Tyogin** — 主要架构师，重排前 200 张卡片，调整例句，校对
-- **shoui** — 通读整套卡组校对，修正翻译
-- **Julian** — 补充注释，检查部分例句翻译
-- **karifurai** — 核验前 750 张卡的音高重音数据并补充音高注释
-- **cindsa** — 核验后 750 张卡的音高重音数据并补充音高注释
-- **[Kuuube](https://github.com/Kuuuube)** — 建议使用 FFmpeg 处理音频；撰写"覆盖导入到其他卡组"章节
-- **[stephenmk](https://github.com/stephenmk)** — 用 Jmdict Furigana 工具修复振假名（见上游 v1.3.0）
-- **[Kaanium](https://github.com/kaanium)** — 协助编写脚本，把卡组转换为书写版本
-- **[Lars（liarbeast）](https://github.com/liarbeast)** — 从 [いらすとや](https://www.irasutoya.com/) 补充配图
+[栗](https://github.com/donkuri/) - 总负责人，负责所有技术、翻译和校对工作
 
-上游使用的工具：
+Tyogin - 总负责人，重新排序了前 200 张卡片，修改了例句，并参与校对
 
-- **[AJT Japanese](https://github.com/Ajatt-Tools/Japanese)** — 生成音高重音、振假名与部分音频
-- **[FFmpeg](https://ffmpeg.org/)** — 裁剪音频静音段
-- **[Tenacity](https://tenacityaudio.org/)** — 修复音频削波
+shoui - 校对了整个牌组，并修正了翻译
 
-此外，卡组名称与许多设计灵感来自 TMW Discord 服务器成员；例句则来自 AnkiWeb 上多套 Core 卡组。
+Julian - 协助添加笔记并核对部分例句翻译
+
+karifurai - 核对了前 750 张卡片的音高重音并添加了音高笔记
+
+cindsa - 核对了后 750 张卡片的音高重音并添加了音高笔记
+
+[Kuuube](https://github.com/Kuuuube) - 建议使用 FFmpeg，并撰写了上文关于迁移卡片至 Kaishi 1.5k 的教程
+
+[stephenmk](https://github.com/stephenmk) - 使用 Jmdict Furigana 工具修复了 Kaishi 1.5k 的振假名问题（详见 v1.3.0）
+
+[Kaanium](https://github.com/kaanium) - 协助编写脚本，将牌组转换为书写练习版本
+
+[Lars](https://github.com/liarbeast) - 从 [irasutoya](https://www.irasutoya.com/) 网站添加了图片
+
+在牌组制作过程中，我们使用了以下工具：
+
+[AJT Japanese](https://github.com/Ajatt-Tools/Japanese) - 音高重音、振假名和部分音频通过此插件生成
+
+[FFmpeg](https://ffmpeg.org/) - 用于移除音频文件中的静音片段
+
+[Tenacity](https://tenacityaudio.org/) - 用于编辑音频文件中的爆音
+
+我们还从 TMW discord 服务器的许多成员那里获得了宝贵的建议，其中就包括牌组的名字。牌组中的例句则来源于 AnkiWeb 上的各种 Core 系列牌组。
 
 ### zh-CN 本地化
 
-- **[maimemo](https://github.com/maimemo/kaishi-zh-cn)** — 老仓库维护者，完成 v1.0 ~ v1.3.0 的中文释义、词性、活用形翻译，奠定 zh-CN 本地化基础
+> [!NOTE]
+> **⚠️ 非上游原版内容：** 以下致谢为 zh-CN 本地化补充。
+
+- **[maimemo](https://github.com/maimemo)** — 老仓库维护者，完成 v1.0 ~ v1.3.0 的中文释义、词性、活用形翻译，奠定 zh-CN 本地化基础
 - **本仓库维护者** — 从 v1.3.0.1 起接管，同步上游 v2.2.7 → v2.4.3 的客观数据修正，翻译上游新增的注释与音高说明
 
----
+## 反馈与贡献（zh-CN 补充）
 
-## 反馈与贡献
+> [!NOTE]
+> **⚠️ 非上游原版内容：** 本节为 zh-CN 本地化补充。
 
 - **数据问题**（音高、例句、图片、音频、词汇注释）：请到 [上游 donkuri/Kaishi issues](https://github.com/donkuri/Kaishi/issues) 反馈，本仓库会跟随上游同步
-- **中文翻译问题**（释义、词性、活用形、注释翻译）：请到 [本仓库 issues](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn/issues) 反馈
+- **中文翻译问题**（释义、词性、活用形、注释翻译）：请到 [本仓库 issues](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn/issues) 和 [老仓库 issues](https://github.com/maimemo/kaishi-zh-cn/issues) 反馈
