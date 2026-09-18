@@ -1,16 +1,16 @@
 # Kaishi 1.5k zh-CN 更新日志
 
-## v1.5.0（上游版本 v2.4.3）
+## v1.3.0.1（上游版本 v2.4.3）
 
 **更新日期：** 2026-09-17
 
-**版本号说明：** zh-CN 本地化版本（**v1.5.0**），延续 [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn) 版本；括号内为主版本号与上游 [donkuri/Kaishi](https://github.com/donkuri/Kaishi) 对齐（**v2.4.3**），表示数据同步自上游哪一版。两者共存：zh-CN 版本号标识「本地化迭代」，上游版本号标识「数据基线」。
+**版本号说明：** zh-CN 本地化版本（**v1.3.0.1**），延续 [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn) 版本；括号内为主版本号与上游 [donkuri/Kaishi](https://github.com/donkuri/Kaishi) 对齐（**v2.4.3**），表示数据同步自上游哪一版。两者共存：zh-CN 版本号标识「本地化迭代」，上游版本号标识「数据基线」。
 
 **对比基线：** 老版本 zh-CN 卡组（`Kaishi_15k_zh-CN.apkg`，其数据对应上游 v2.2.7）
 
 **上游仓库：** [donkuri/Kaishi](https://github.com/donkuri/Kaishi)（v2.4.3）
 
-**zh-CN 老仓库：** [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn)（v1.4.0）
+**zh-CN 老仓库：** [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn)（v1.3.0）
 
 ---
 

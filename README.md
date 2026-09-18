@@ -2,18 +2,18 @@
 
 # Kaishi 1.5k zh-CN
 
-面向中文母语者的日语入门 Anki 卡组，本地化自上游 [donkuri/Kaishi](https://github.com/donkuri/Kaishi)。当前数据基线 **v2.4.3**，zh-CN 本地化版本 **v1.5.0**。
+面向中文母语者的日语入门 Anki 卡组，本地化自上游 [donkuri/Kaishi](https://github.com/donkuri/Kaishi)。当前数据基线 **v2.4.3**，zh-CN 本地化版本 **v1.3.0.1**。
 
 ## 项目关系
 
-| 类型 | 仓库 | 版本 | 说明 |
-| --- | --- | --- | --- |
-| 上游 | [donkuri/Kaishi](https://github.com/donkuri/Kaishi) | v2.4.3 | 客观数据来源（音高重音、例句、配图、音频、词汇注释） |
-| zh-CN 老仓库 | [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn) | v1.4.0 | 早期（v2.2.7）中文本地化仓库，提供中文释义、词性、活用形的基础翻译 |
-| 本仓库 | [Angle-AOB/kaishi-1.5k-zh-cn](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn) | v1.5.0 起 | 从老仓库派生，提供后续 zh-CN 本地化迭代与上游同步 |
-| 更新日志 | [CHANGELOG.md](./CHANGELOG.md) | — | 每次发布的详细变更（同步了哪些上游数据、翻译了哪些新增注释、升级路径等） |
+| 类型        | 仓库                                                                            | 版本         | 说明                                   |
+| --------- | ----------------------------------------------------------------------------- | ---------- | ------------------------------------ |
+| 上游        | [donkuri/Kaishi](https://github.com/donkuri/Kaishi)                           | v2.4.3     | 客观数据来源（音高重音、例句、配图、音频、词汇注释）           |
+| zh-CN 老仓库 | [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn)               | v1.3.0     | 早期（v2.2.7）中文本地化仓库，提供中文释义、词性、活用形的基础翻译 |
+| 本仓库       | [Angle-AOB/kaishi-1.5k-zh-cn](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn) | v1.3.0.1 起 | 从老仓库派生，提供后续 zh-CN 本地化迭代与上游同步         |
+| 更新日志      | [CHANGELOG.md](./CHANGELOG.md)                                                | —          | 每次发布的详细变更（同步了哪些上游数据、翻译了哪些新增注释、升级路径等） |
 
-**双版本号约定：** CHANGELOG 里标题形如 `## v1.5.0（上游版本 v2.4.3）`——前者是 zh-CN 本地化版本，延续老仓库 v1.x 体系；后者是数据同步基线，与上游 v2.x 对齐。两条版本线并行，不合并、不同步。
+**双版本号约定：** CHANGELOG 里标题形如 ` v1.3.0.1（上游版本 v2.4.3）`——前者是 zh-CN 本地化版本，延续老仓库 v1.x 体系；后者是数据同步基线，与上游 v2.x 对齐。两条版本线并行，不合并、不同步。
 
 ---
 
@@ -58,7 +58,7 @@ Kaishi 1.5k 是一套为日语初学者设计的现代 Anki 卡组，收录约 1
 ## 在哪里下载卡组？
 
 - **本仓库（zh-CN 最新版）：** [Releases 页面](https://github.com/Angle-AOB/kaishi-1.5k-zh-cn/releases) 下载 `Kaishi_15k_zh-CN_updated.apkg`
-- **老仓库（zh-CN v1.4.0）：** <https://github.com/maimemo/kaishi-zh-cn>
+- **老仓库（zh-CN v1.3.0）：** <https://github.com/maimemo/kaishi-zh-cn>
 - **上游（英文原版）：** [donkuri/Kaishi Releases](https://github.com/donkuri/Kaishi/releases/) 或 [AnkiWeb](https://ankiweb.net/shared/info/1196762551)
 
 **最低 Anki 版本：2.1.50+**（低于此版本可能因模板语法或字段变化而导入失败）。
@@ -71,14 +71,14 @@ Kaishi 1.5k 是一套为日语初学者设计的现代 Anki 卡组，收录约 1
 
 本仓库在完整继承上游客观数据的前提下，为中文母语者增加了以下内容：
 
-| 字段 | 上游原版 | 本仓库 zh-CN 版 |
-| --- | --- | --- |
-| `Word Meaning` | 英文释义 | **中文释义**（保留老仓库翻译，部分调整） |
-| `Sentence Meaning` | 英文翻译 | **中文翻译** |
-| `Notes` | 英文注释 | **中文注释**（上游新增注释同步翻译） |
-| `Pitch Accent Notes` | 英文音高说明 | **中文音高说明**（含鼻浊音、音高变化等语言现象的详细解释） |
-| `Pos`（Field 14） | 无 | **中文词性标注**（zh-CN 独有字段） |
-| `Katsuyou`（Field 15） | 无 | **中文活用形说明**（zh-CN 独有字段，标注动词/形容词的活用类型） |
+| 字段                   | 上游原版   | 本仓库 zh-CN 版                           |
+| -------------------- | ------ | ------------------------------------- |
+| `Word Meaning`       | 英文释义   | **中文释义**（保留老仓库翻译，部分调整）                |
+| `Sentence Meaning`   | 英文翻译   | **中文翻译**                              |
+| `Notes`              | 英文注释   | **中文注释**（上游新增注释同步翻译）                  |
+| `Pitch Accent Notes` | 英文音高说明 | **中文音高说明**（含鼻浊音、音高变化等语言现象的详细解释）       |
+| `Pos`（Field 14）      | 无      | **中文词性标注**（zh-CN 独有字段）                |
+| `Katsuyou`（Field 15） | 无      | **中文活用形说明**（zh-CN 独有字段，标注动词/形容词的活用类型） |
 
 上游的音高重音数据（`Pitch Accent`）、例句（`Sentence`、`Sentence Furigana`）、图片（`Picture`）、音频（`Word Audio`、`Sentence Audio`）等客观字段与上游 v2.4.3 完全一致，未做本地化改写。
 
@@ -104,7 +104,7 @@ Back Template 里默认把音高重音相关部分用 HTML 注释包起来了：
 <!-- This part enables pitch accent.
 
 {{#Pitch Accent}}
-	<br><div style='font-size: 24px'>{{Pitch Accent}}</div>
+    <br><div style='font-size: 24px'>{{Pitch Accent}}</div>
 {{/Pitch Accent}} 
 
 -->
@@ -119,17 +119,17 @@ Back Template 里默认把音高重音相关部分用 HTML 注释包起来了：
 {{Picture}}
 
 {{#Notes}}
-	<br>
-	<div style="font-size: 20px; padding-top:12px">Note: {{Notes}}</div>
+    <br>
+    <div style="font-size: 20px; padding-top:12px">Note: {{Notes}}</div>
 {{/Notes}}
 
 <!-- This part enables pitch accent notes.
 
 {{#Pitch Accent Notes}}
 <div style="font-size: 20px; width: fit-content; max-width:40vw; margin: auto">
-	<details><summary>Pitch Accent Notes</summary>
-		<br>{{Pitch Accent Notes}}
-	</details>
+    <details><summary>Pitch Accent Notes</summary>
+        <br>{{Pitch Accent Notes}}
+    </details>
 </div>
 {{/Pitch Accent Notes}}
 
@@ -145,7 +145,7 @@ Back Template 里默认把音高重音相关部分用 HTML 注释包起来了：
 {{furigana:Word Furigana}}
 
 {{#Pitch Accent}}
-	<br><div style='font-size: 24px'>{{Pitch Accent}}</div>
+    <br><div style='font-size: 24px'>{{Pitch Accent}}</div>
 {{/Pitch Accent}} 
 
 <div style='font-size: 25px; padding-bottom:20px'>{{Word Meaning}}</div>
@@ -158,15 +158,15 @@ Back Template 里默认把音高重音相关部分用 HTML 注释包起来了：
 {{Picture}}
 
 {{#Notes}}
-	<br>
-	<div style="font-size: 20px; padding-top:12px">Note: {{Notes}}</div>
+    <br>
+    <div style="font-size: 20px; padding-top:12px">Note: {{Notes}}</div>
 {{/Notes}}
 
 {{#Pitch Accent Notes}}
 <div style="font-size: 20px; width: fit-content; max-width:40vw; margin: auto">
-	<details><summary>Pitch Accent Notes</summary>
-		<br>{{Pitch Accent Notes}}
-	</details>
+    <details><summary>Pitch Accent Notes</summary>
+        <br>{{Pitch Accent Notes}}
+    </details>
 </div>
 {{/Pitch Accent Notes}}
 
@@ -201,15 +201,15 @@ Front Template 默认如下：
 
 > [!WARNING]
 > **⚠️ 上游作者明确不推荐这样做，请先读完警告再决定。**
->
+> 
 > 上游 issue [donkuri/Kaishi#155](https://github.com/donkuri/Kaishi/issues/155)（2026-07）里，社区用户 [JonnaMat](https://github.com/JonnaMat) 提交了完全对应的 “English → Japanese” Card Type 2 教程，本节模板代码即改编自该 issue。上游作者 donkuri 关闭该 issue 时的回复：
->
+> 
 > > *“I would highly recommend not doing this as translations are very much one-way streets. Starting from the English sentence, I often would translate it differently.”*
-> >
+> > 
 > > 译：我强烈不建议这样做，因为翻译是单向的。从英文句子出发，我往往会翻译成不同的样子。
->
+> 
 > **作者的顾虑：** L2 → L1 的映射不唯一。看到中文“我吃饭”回想日文时，你脑中可能是「ご飯を食べる」，也可能是「食事する」，也可能是「飯を食う」，但卡片只认一个答案，容易造成挫败或强化错误的对应关系。
->
+> 
 > 如果你已经理解上述顾虑、仍希望为**特定**词汇启用反向卡（例如已熟悉词想练输出、易混词想强化辨析），继续往下看。
 
 #### 适用场景
@@ -341,7 +341,7 @@ b{color: #5586cd}
 <!-- This part enables pitch accent.
 
 {{#Pitch Accent}}
-	<br><div style='font-size: 24px'>{{Pitch Accent}}</div>
+    <br><div style='font-size: 24px'>{{Pitch Accent}}</div>
 {{/Pitch Accent}} 
 
 -->
@@ -355,17 +355,17 @@ b{color: #5586cd}
 <br>
 
 {{#Notes}}
-	<br>
-	<div style="font-size: 20px; padding-top:12px">Note: {{Notes}}</div>
+    <br>
+    <div style="font-size: 20px; padding-top:12px">Note: {{Notes}}</div>
 {{/Notes}}
 
 <!-- This part enables pitch accent notes.
 
 {{#Pitch Accent Notes}}
 <div style="font-size: 20px; width: fit-content; max-width:40vw; margin: auto">
-	<details><summary>Pitch Accent Notes</summary>
-		<br>{{Pitch Accent Notes}}
-	</details>
+    <details><summary>Pitch Accent Notes</summary>
+        <br>{{Pitch Accent Notes}}
+    </details>
 </div>
 {{/Pitch Accent Notes}}
 
@@ -418,7 +418,7 @@ Kaishi 已被翻译成多种语言，如果你有其他语言需求，可以到�
 
 ## 从老版本 zh-CN 升级到本仓库版本
 
-如果你之前用的是老仓库 [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn)（v1.4.0，对应上游 v2.2.7 数据），想升级到本仓库 v1.5.0（对应上游 v2.4.3）：
+如果你之前用的是老仓库 [maimemo/kaishi-zh-cn](https://github.com/maimemo/kaishi-zh-cn)（v1.3.0，对应上游 v2.2.7 数据），想升级到本仓库 v1.3.0.1（对应上游 v2.4.3）：
 
 1. **先备份**：Anki → **文件 → 导出**，勾选 **包含调度信息**，导出老卡组
 2. 下载本仓库最新的 `Kaishi_15k_zh-CN_updated.apkg`
@@ -458,8 +458,8 @@ Kaishi 已被翻译成多种语言，如果你有其他语言需求，可以到�
 
 ### zh-CN 本地化
 
-- **[maimemo](https://github.com/maimemo/kaishi-zh-cn)** — 老仓库维护者，完成 v1.0 ~ v1.4.0 的中文释义、词性、活用形翻译，奠定 zh-CN 本地化基础
-- **本仓库维护者** — 从 v1.5.0 起接管，同步上游 v2.2.7 → v2.4.3 的客观数据修正，翻译上游新增的注释与音高说明
+- **[maimemo](https://github.com/maimemo/kaishi-zh-cn)** — 老仓库维护者，完成 v1.0 ~ v1.3.0 的中文释义、词性、活用形翻译，奠定 zh-CN 本地化基础
+- **本仓库维护者** — 从 v1.3.0.1 起接管，同步上游 v2.2.7 → v2.4.3 的客观数据修正，翻译上游新增的注释与音高说明
 
 ---
 
